@@ -7,19 +7,19 @@ function ContentRowTop(){
     const datos=[
         {
             titulo:"Movies in Data Base",
-            cantidad:"21",
+            cantidad:21,
             class:"card border-left-primary shadow h-100 py-2",
             icono:"fas fa-film fa-2x text-gray-300"
         },
         {
             titulo:"Total award",
-            cantidad:"79",
+            cantidad:79,
             class:"card border-left-success shadow h-100 py-2",
             icono:"fas fa-award fa-2x text-gray-300"
         },
         {
             titulo:"Actors quantity",
-            cantidad:"49",
+            cantidad:49,
             class:"card border-left-warning shadow h-100 py-2",
             icono:"fas fa-user fa-2x text-gray-300"
         }
@@ -45,5 +45,6 @@ function ContentRowTop(){
     </div>
     )
 }
+
 
 export default ContentRowTop

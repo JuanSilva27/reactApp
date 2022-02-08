@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 function GenresInDb(props) {
     return (
         <div className="col-lg-6 mb-4">
@@ -23,3 +25,7 @@ function GenresInDb(props) {
     )
 }
 export default GenresInDb
+
+GenresInDb.propTypes = {
+    genres: PropTypes.array
+}

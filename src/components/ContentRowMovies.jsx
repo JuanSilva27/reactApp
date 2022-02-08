@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 function ContentRowMovies(props) {
     return (
         <div  className="row">
@@ -23,4 +25,18 @@ function ContentRowMovies(props) {
         </div>
     )
 }
+ContentRowMovies.propTypes={
+    datos: PropTypes.array,
+    customProp:function(datos){
+        for (let i =0 ; i<datos.datos.length;i++) {
+            
+            if(typeof datos.datos[i].class !== "string" || typeof datos.datos[i].titulo !=="string" || typeof datos.datos[i].icono !=="string" || typeof datos.datos[i].cantidad !=="number" ){
+                console.log("Error!!!")
+                return new Error ("Invalid props, class, titulo and icon must be an string and cantidad must be a number")
+            }
+            
+        }
+    }
+}
+
 export default ContentRowMovies
